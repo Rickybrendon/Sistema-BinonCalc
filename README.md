@@ -36,6 +36,7 @@ Dessa forma, o sistema permite uma comparação direta entre:
 # 📁 Estrutura do Projeto
 
 O projeto está organizado da seguinte forma:
+
 app_BinonCalc/
 │
 ├── app.py
