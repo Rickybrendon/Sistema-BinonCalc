@@ -33,6 +33,26 @@ Dessa forma, o sistema permite uma comparação direta entre:
 > 📌 o comportamento simulado (experimentos repetidos no computador)
 
 ---
+# 📁 Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
+app_BinonCalc/
+│
+├── app.py
+│ → Arquivo principal do sistema (interface em Streamlit)
+│ → Responsável pela interação com o usuário, gráficos e exibição dos resultados
+
+├── binomial_model.py
+│ → Módulo matemático do projeto
+│ → Contém os cálculos da distribuição binomial, média, variância, moda, mediana e simulação Monte Carlo
+
+├── main.py
+│ → Versão alternativa do sistema em terminal (opcional)
+│ → Usado para testes rápidos sem interface gráfica
+
+├── README.md
+│ → Documentação completa do projeto
+│ → Explicação do funcionamento, instalação e teoria utilizada
 
 # ⚙️ Funcionalidades do Sistema
 
