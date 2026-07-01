@@ -6,17 +6,35 @@
 
 ---
 
-## 🧠 Sobre o Projeto
+# 🧠 Sobre o Projeto
 
-O **BinomCalc** é um sistema interativo desenvolvido em Python com interface em Streamlit que realiza a análise completa da **distribuição binomial**.
+O **BinomCalc** é um sistema interativo desenvolvido em Python com interface em Streamlit que tem como objetivo principal analisar e visualizar a **distribuição binomial** de forma intuitiva, dinâmica e educativa.
 
-Ele permite calcular probabilidades, média, moda, mediana e variância, além de comparar o modelo teórico com simulações usando o método de **Monte Carlo**.
+A distribuição binomial é um modelo probabilístico utilizado para representar experimentos que possuem apenas dois resultados possíveis em cada tentativa: sucesso ou falha. O sistema permite que o usuário defina dois parâmetros fundamentais:
 
-O objetivo do projeto é unir teoria estatística e simulação computacional, facilitando a compreensão da distribuição binomial de forma visual e interativa.
+- **n** → número de tentativas  
+- **p** → probabilidade de sucesso em cada tentativa  
+
+A partir disso, o sistema calcula automaticamente toda a estrutura estatística da distribuição, incluindo:
+
+- Probabilidade de cada resultado possível (k sucessos)
+- Média (valor esperado)
+- Moda (valor mais provável)
+- Mediana (valor central aproximado)
+- Variância (dispersão dos dados)
+
+Além dos cálculos matemáticos, o projeto também inclui **simulação computacional via método de Monte Carlo**, que consiste em repetir o experimento diversas vezes para gerar uma aproximação empírica da distribuição teórica.
+
+Dessa forma, o sistema permite uma comparação direta entre:
+
+> 📌 o comportamento teórico (modelo matemático exato)  
+> 📌 o comportamento simulado (experimentos repetidos no computador)
+
+Essa combinação torna o projeto uma ferramenta completa para estudo e visualização da probabilidade.
 
 ---
 
-## 👥 Integrantes do Grupo
+# 👥 Integrantes do Grupo
 
 - Integrante 1  
 - Integrante 2  
@@ -26,4 +44,4 @@ O objetivo do projeto é unir teoria estatística e simulação computacional, f
 
 ---
 
-## 📁 Estrutura do Projeto
+# 📁 Estrutura do Projeto
