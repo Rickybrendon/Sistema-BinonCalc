@@ -10,7 +10,9 @@
 
 O **BinomCalc** é um sistema interativo desenvolvido em Python com interface em Streamlit que tem como objetivo principal analisar e visualizar a **distribuição binomial** de forma intuitiva, dinâmica e educativa.
 
-A distribuição binomial é um modelo probabilístico utilizado para representar experimentos que possuem apenas dois resultados possíveis em cada tentativa: sucesso ou falha. O sistema permite que o usuário defina dois parâmetros fundamentais:
+A distribuição binomial é um modelo probabilístico utilizado para representar experimentos que possuem apenas dois resultados possíveis em cada tentativa: sucesso ou falha.
+
+O sistema permite que o usuário defina dois parâmetros fundamentais:
 
 - **n** → número de tentativas  
 - **p** → probabilidade de sucesso em cada tentativa  
@@ -30,18 +32,101 @@ Dessa forma, o sistema permite uma comparação direta entre:
 > 📌 o comportamento teórico (modelo matemático exato)  
 > 📌 o comportamento simulado (experimentos repetidos no computador)
 
-Essa combinação torna o projeto uma ferramenta completa para estudo e visualização da probabilidade.
+---
+
+# ⚙️ Funcionalidades do Sistema
+
+O BinomCalc permite:
+
+- 📊 Cálculo automático de probabilidades binomiais  
+- 📈 Visualização gráfica da distribuição teórica  
+- 🎲 Simulação de Monte Carlo  
+- 🧠 Interpretação automática dos resultados  
+- 📌 Identificação da média, moda e mediana  
+- 🔴 Classificação de eventos (raro, comum, etc.)
 
 ---
 
-# 👥 Integrantes do Grupo
+# 📊 Funcionamento do Sistema
 
-- Integrante 1  
-- Integrante 2  
-- Integrante 3  
-- Integrante 4  
-- Integrante 5  
+O sistema é dividido em três etapas principais:
+
+## 🎛️ 1. Entrada de dados
+O usuário define:
+- número de tentativas (n)
+- probabilidade de sucesso (p)
+- número de sucessos (k)
 
 ---
 
-# 📁 Estrutura do Projeto
+## 📐 2. Cálculo matemático
+O sistema utiliza a fórmula da distribuição binomial:
+
+\[
+P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
+\]
+
+E calcula também:
+- média (μ = n·p)
+- variância (σ² = n·p·(1-p))
+- moda
+- mediana
+
+---
+
+## 🎲 3. Simulação Monte Carlo
+O sistema simula o experimento várias vezes:
+
+- executa n tentativas repetidas
+- conta sucessos
+- repete milhares de vezes
+- gera distribuição empírica
+
+---
+
+# 📊 Explicação dos Gráficos
+
+## 📊 Gráfico 1 — Distribuição Binomial (Teórica)
+
+Este gráfico representa a probabilidade exata de cada valor de k.
+
+📌 Características:
+- formato de “montanha”
+- pico na região da média
+- extremos menos prováveis
+
+📍 Interpretação:
+Mostra o comportamento matemático ideal da distribuição binomial.
+
+---
+
+## 🎲 Gráfico 2 — Teórico vs Monte Carlo
+
+Este gráfico compara:
+
+- 🔵 Teórico → fórmula matemática exata  
+- 🟠 Monte Carlo → simulação computacional  
+
+📍 Interpretação:
+Quanto maior o número de simulações, mais a distribuição simulada se aproxima da teórica, validando o modelo binomial.
+
+---
+
+# 🧪 Tecnologias Utilizadas
+
+- Python 🐍  
+- Streamlit 🖥️  
+- Matplotlib 📊  
+- Estatística 📐  
+- Simulação Monte Carlo 🎲  
+
+---
+
+# 🚀 Como Executar o Projeto
+
+## 📌 1. Instalar dependências
+
+```bash
+python -m pip install streamlit matplotlib numpy
+
+
