@@ -114,11 +114,12 @@ Quanto maior o número de simulações, mais a distribuição simulada se aproxi
 
 # 🧪 Tecnologias Utilizadas
 
-- Python 🐍  
-- Streamlit 🖥️  
-- Matplotlib 📊  
-- Estatística 📐  
-- Simulação Monte Carlo 🎲  
+- Python   
+- Streamlit  
+- Matplotlib   
+- Estatística   
+- Simulação Monte Carlo 
+- Chatgpt
 
 ---
 
